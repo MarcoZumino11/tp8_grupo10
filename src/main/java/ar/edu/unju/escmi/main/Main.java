@@ -25,20 +25,20 @@ public class Main {
         int op = 0;
 
         do {
-            System.out.println("\n====== Menu Principal =====");
-            System.out.println("1- Alta de cliente.");
-            System.out.println("2- Alta de producto.");
-            System.out.println("3- Realizar la venta de productos (Alta de una nueva factura).");
-            System.out.println("4- Buscar una factura ingresando su número de factura y mostrar todos sus datos.");
-            System.out.println("5- Eliminar una factura (eliminación lógica).");
-            System.out.println("6- Eliminar un cliente (eliminación lógica).");
-            System.out.println("7- Modificar datos de cliente.");
-            System.out.println("8- Modificar precio de producto.");
-            System.out.println("9- Eliminar producto (eliminación lógica, se usa el atributo estado).");
-            System.out.println("10- Mostrar todas las facturas.");
-            System.out.println("11- Mostrar todos los clientes.");
-            System.out.println("12- Mostrar las facturas que superen el total de $500.000.");
-            System.out.println("13- Salir.");
+            System.out.println("\n=========== MENU PRINCIPAL ===========");
+            System.out.println("1)- Alta de cliente.");
+            System.out.println("2)- Alta de producto.");
+            System.out.println("3)- Realizar la venta de productos (Alta de una nueva factura).");
+            System.out.println("4)- Buscar una factura ingresando su número de factura y mostrar todos sus datos.");
+            System.out.println("5)- Eliminar una factura (elim. lógica).");
+            System.out.println("6)- Eliminar un cliente (elim. lógica).");
+            System.out.println("7)- Modificar datos de cliente.");
+            System.out.println("8)- Modificar precio de producto.");
+            System.out.println("9)- Eliminar producto (elim. lógica, atributo estado).");
+            System.out.println("10)- Mostrar todas las facturas.");
+            System.out.println("11)- Mostrar todos los clientes.");
+            System.out.println("12)- Mostrar las facturas que superen el total de $500.000.");
+            System.out.println("13)- Salir X.");
             System.out.print("Seleccione una opción: ");
             op = scanner.nextInt();
             scanner.nextLine(); // Consumir el salto de línea
