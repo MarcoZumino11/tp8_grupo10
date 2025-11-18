@@ -14,16 +14,18 @@
         <properties>
 			<!-- Conexión a la base de datos -->
 			<property name="jakarta.persistence.jdbc.driver" value="com.mysql.cj.jdbc.Driver"/>
-            <property name="jakarta.persistence.jdbc.url" value="jdbc:mysql://localhost:3306/persistencebdtp8grupo6?zeroDateTimeBehavior=convertToNull&amp;serverTimezone=UTC"/>
+            <property name="jakarta.persistence.jdbc.url" value="jdbc:mysql://localhost:3306/persistencebdtp8grupo10?zeroDateTimeBehavior=convertToNull&amp;serverTimezone=UTC"/>
             <property name="jakarta.persistence.jdbc.user" value="root"/>
-            <property name="jakarta.persistence.jdbc.password" value="1root9_Test"/>
+            <property name="jakarta.persistence.jdbc.password" value="root"/>
 			<!-- Configuración de Hibernate -->
-			<property name="hibernate.dialect" value="org.hibernate.dialect.MySQL8Dialect"/>
-			<property name="hibernate.hbm2ddl.auto" value="update"/>   
+            <property name="hibernate.dialect" value="org.hibernate.dialect.MySQL8Dialect"/>			<property name="hibernate.hbm2ddl.auto" value="update"/>   
 			<!--   <property name="hibernate.hbm2ddl.auto" value="update"/> -->   
 			<!--  <property name="hibernate.hbm2ddl.auto" value="create"/> -->
-			<property name = "hibernate.show_sql" value = "true" />
-			<property name="hibernate.format_sql" value="true"/>
+			<property name="hibernate.show_sql" value="false"/>
+			<property name="hibernate.format_sql" value="false"/>
+			<!-- Desactivar logs de Hibernate -->
+			<property name="logging.level.org.hibernate" value="ERROR"/>
+			<property name="logging.level.org.hibernate.engine.jdbc" value="ERROR"/>
         </properties>
     </persistence-unit>
 </persistence>
