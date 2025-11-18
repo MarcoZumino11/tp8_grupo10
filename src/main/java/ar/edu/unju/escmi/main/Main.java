@@ -481,9 +481,16 @@ public class Main {
         List<Cliente> clientes = clienteDao.obtenerClientes();
         System.out.println("Cantidad de clientes encontrados: " + clientes.size());
         if (clientes != null && !clientes.isEmpty()) {
+            int contador = 0;
             for (Cliente cliente : clientes) {
-                System.out.println(cliente);
-                System.out.println("-------------------------");
+                if (cliente.isEstado()) { // Solo mostrar clientes activos
+                    System.out.println(cliente);
+                    System.out.println("-------------------------");
+                    contador++;
+                }
+            }
+            if (contador == 0) {
+                System.out.println("No hay clientes activos para mostrar.");
             }
         } else {
             System.out.println("No hay clientes disponibles para mostrar.");
