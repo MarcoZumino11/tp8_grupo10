@@ -352,11 +352,15 @@ public class Main {
         IFacturaDao facturaDao = new FacturaDaoImp();
         List<Factura> facturas = facturaDao.obtenerFacturas();
         System.out.println("Cantidad de facturas encontradas: " + facturas.size());
-        if (facturas != null && !facturas.isEmpty()) {
-            for (Factura factura : facturas) {
-                System.out.println(factura);
-                System.out.println("-------------------------");
-            }
+     if (facturas != null && !facturas.isEmpty()) {
+        
+        for (Factura factura : facturas) {
+                if (factura.isEstado()) {
+                    System.out.println(factura);
+                    System.out.println("-------------------------");
+                }
+        }
+    
         } else {
             System.out.println("No hay facturas disponibles para mostrar.");
         }
